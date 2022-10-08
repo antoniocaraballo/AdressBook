@@ -35,6 +35,7 @@ let newBtn = document.querySelector("#new-btn");
 newBtn.addEventListener("click", newContactForm);
 
 function newContactForm() {
+  document.querySelector("#cardBg").style.opacity = "100%";
   document.querySelector("#cardBg").style.top = "0%";
 }
 
@@ -46,6 +47,7 @@ function closeContactForm() {
   cName.value = "";
   cPhone.value = "";
   cEmail.value = "";
+  document.querySelector("#cardBg").style.opacity = "0%";
   document.querySelector("#cardBg").style.top = "-100%";
 }
 
@@ -70,7 +72,7 @@ function saveContact() {
     cEmail.value = "";
 
     updateContacts();
-
+    document.querySelector("#cardBg").style.opacity = "0%";
     document.querySelector("#cardBg").style.top = "-100%";
   }
 }
