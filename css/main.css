@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #243d66;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+#card {
+  background: #ebedee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 400px;
+  width: 90%;
+  padding: 70px 40px;
+  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+}
+#card h1 {
+  text-align: center;
+}
+
+#cardBg {
+  content: "";
+  background: rgba(36, 36, 36, 0.9);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: -100%;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 40px;
+}
+form h1 {
+  position: absolute;
+  right: 8px;
+  top: 0px;
+  cursor: pointer;
+}
+form label {
+  margin-bottom: 4px;
+}
+form label span {
+  color: rgb(194, 0, 0);
+}
+form input {
+  padding: 10px;
+  outline: none;
+  border: 1px solid #6e61ca;
+  background: transparent;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+form input:focus-within {
+  border: 1px solid #6e61ca;
+}
+form button {
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background: #6e61ca;
+  color: #ffffff;
+  cursor: pointer;
+}
+form button:hover {
+  opacity: 0.9;
+}
+
+.contactsCard {
+  background: #ebedee;
+  padding: 40px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+}
+.contactsCard h1 {
+  margin-bottom: 25px;
+}
+.contactsCard #buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.contactsCard .btn {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  background: #6e61ca;
+  color: #ffffff;
+}
+.contactsCard .btn:last-child {
+  background: rgb(194, 0, 0);
+}
+.contactsCard .btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+#contactsList {
+  border-radius: 8px;
+  border: 1px solid #243d66;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.contact {
+  border: 2px solid #6e61ca;
+  border-radius: 5px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}

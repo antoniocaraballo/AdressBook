@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <script src="./app.js" defer></script>
+    <title>Address Book</title>
+  </head>
+  <body>
+    <!-- Main Content -->
+    <div class="contactsCard">
+      <h1>Contacts</h1>
+      <!-- Buttons -->
+      <div id="buttons">
+        <button class="btn" id="new-btn">New</button>
+        <button class="btn" id="del-btn">Delete</button>
+      </div>
+      <!-- Contacts List -->
+      <div id="contactsList"></div>
+    </div>
+
+    <!-- ADD CONTACT -->
+    <div id="cardBg">
+      <div id="card">
+        <h1>New contact</h1>
+        <!-- Add Contact Form -->
+        <form>
+          <h1 id="close-new-contact"><i class="bi bi-x"></i></h1>
+          <!-- Name -->
+          <label for="name">Name<span>*</span></label>
+          <input type="text" id="name" placeholder="ENTER NAME" />
+          <!-- Phone -->
+          <label for="phone">Phone<span>*</span></label>
+          <input type="number" id="phone" placeholder="PHONE NUMBER" />
+          <!-- Email -->
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="ENTER EMAIL" />
+          <button type="button" id="save-btn">Save</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+$bg: #243d66;
+$primary: #6e61ca;
+$secondary: #c282fa;
+$light: #ebedee;
+$dark: #242424;
+
+body {
+  background: $bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#card {
+  background: $light;
+  display: flex;
+  max-width: 400px;
+  width: 90%;
+  padding: 70px 40px;
+  border-radius: 10px;
+  flex-direction: column;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 25px 0px rgba($color: #000000, $alpha: 0.5);
+
+  h1 {
+    text-align: center;
+  }
+}
+
+#cardBg {
+  content: "";
+  background: rgba($color: $dark, $alpha: 0.9);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: -100%;
+  //   display: none;
+  transition: all ease-in-out 0.3s;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+
+  h1 {
+    position: absolute;
+    right: 8px;
+    top: 0px;
+    cursor: pointer;
+  }
+
+  label {
+    margin-bottom: 4px;
+
+    span {
+      color: rgb(194, 0, 0);
+    }
+  }
+
+  input {
+    padding: 10px;
+    outline: none;
+    border: 1px solid $primary;
+    background: transparent;
+    border-radius: 4px;
+    margin-bottom: 15px;
+
+    &:focus-within {
+      border: 1px solid $primary;
+    }
+  }
+
+  button {
+    margin-top: 8px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background: $primary;
+    color: #ffffff;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.contactsCard {
+  background: $light;
+  padding: 40px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0px 0px 25px 0px rgba($color: #000000, $alpha: 0.5);
+
+  h1 {
+    margin-bottom: 25px;
+  }
+
+  #buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+  }
+
+  .btn {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    background: $primary;
+    color: #ffffff;
+
+    &:last-child {
+      background: rgb(194, 0, 0);
+    }
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+}
+
+#contactsList {
+  border-radius: 8px;
+  border: 1px solid $bg;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+// Contact Style
+
+.contact {
+  border: 2px solid $primary;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
